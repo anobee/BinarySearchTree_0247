@@ -79,9 +79,9 @@ class binarytree
         }
         if (ptr != NULL)
         {
-            inorder(ptr->lchild);
-            cout << ptr->info << "";
-            inorder(ptr->rchild);
+            inorder(ptr->lchild); //leftchild
+            cout << ptr->info << ""; //root
+            inorder(ptr->rchild); //rightchild
         }
     }
 
@@ -112,6 +112,34 @@ class binarytree
             postorder(ptr->lchild);
             postorder(ptr->rchild);
             cout << ptr->info << "";
+        }
+    }
+};
+
+int main()
+{
+    binarytree x;
+    while (true)
+    {
+        cout << "\nmenu" << endl;
+        cout << "1. implement insert option" << endl;
+        cout << "2. perform inorder traversal" << endl;
+        cout << "3. perform preorder traversal" << endl;
+        cout << "4. perform postorder traversal" << endl;
+        cout << "5. exit " << endl;
+        cout << "\nenter your choice(1-5) :" << endl;
+
+        char ch;
+        cin >> ch;
+        cout << endl;
+
+        switch (ch)
+        {
+            case '1':
+            {
+                cout << "enter a word";
+                
+            }
         }
     }
 }
