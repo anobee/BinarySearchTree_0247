@@ -28,15 +28,15 @@ class binarytree
     }
     void insert(string element) //memasukan sebuah node ke dalam binary tree
     {
-        node*newnode = new node(element, nullptr, nullptr); //mengalokasikan node baru 
-        newnode->info = element;
-        newnode->lchild = nullptr;
-        newnode->rchild = nullptr;
+        node* newnode = new node(element, nullptr, nullptr); //mengalokasikan node baru 
+        newnode->info = element; //memsukan data baru pada node baru 
+        newnode->lchild = nullptr; //membuat lchild sebagai titk null
+        newnode->rchild = nullptr; //membuat rchild sebagai titik null
 
         node* parent = nullptr;
         node* currentnode = nullptr;
-        search(element, parent, currentnode);
+        search(element, parent, currentnode); //alokasikan node yang akan menjadi parent parent
 
-        if (parent = nullptr)
+        if (parent == nullptr)//jika parent is null(tree kosong)
     }
 }
