@@ -44,5 +44,11 @@ class binarytree
             return;//keluar
         }
 
-    
+        if (element < parent->info) //jika nilai data field pada node baru lebih kecil dari 
+        {
+            parent->leftchild = newnode;//membuat lchild dari parent menjadi point node baru 
+        }
+
+       
+    }
 }
