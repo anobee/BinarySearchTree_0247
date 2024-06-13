@@ -60,6 +60,18 @@ class binarytree
         //fungsi yang digunakan untuk mencari current node dari node yang di tentukan 
         currentnode = root;
         parent = null;
-        while
+        while((currentnode != null)&&(currentnode->info!=element))
+        {
+            parent = currentnode;
+            if (element < currentnode->info)
+                currentnode = currentnode->lchild;
+                else
+                    currentnode = currentnode->rchild;
+
+        }
+    }
+    void inorder(node* ptr)
+    {
+        
     }
 }
