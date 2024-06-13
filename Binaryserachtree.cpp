@@ -38,5 +38,11 @@ class binarytree
         search(element, parent, currentnode); //alokasikan node yang akan menjadi parent parent
 
         if (parent == nullptr)//jika parent is null(tree kosong)
-    }
+
+        {
+            root = newnode; //menandai newnode sebagai root
+            return;//keluar
+        }
+
+    
 }
