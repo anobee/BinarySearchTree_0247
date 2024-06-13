@@ -138,8 +138,35 @@ int main()
             case '1':
             {
                 cout << "enter a word";
-                
+                string word;
+                cin >> word;
+                x.insert (word);
+                break;
             }
+
+            case '2':
+            {
+                x.inorder(x.root);
+                break;
+            }
+
+            case '3':
+            {
+                x.preorder(x.root);
+                break;
+            }
+
+            case '4':
+            {
+                x.postorder(x.root);
+                break;
+            }
+
+            case '5':
+            {
+                break;
+            }
+
         }
     }
 }
