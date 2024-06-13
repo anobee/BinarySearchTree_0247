@@ -49,6 +49,9 @@ class binarytree
             parent->leftchild = newnode;//membuat lchild dari parent menjadi point node baru 
         }
 
-       
+        else if(element > parent->info) // jika nilai dari data field node baru lebih besar dari 
+        {
+            parent->rchild = newnode;//membuar rchild dari parent sebagai node baru
+        }
     }
 }
