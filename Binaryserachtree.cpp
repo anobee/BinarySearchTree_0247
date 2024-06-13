@@ -54,4 +54,12 @@ class binarytree
             parent->rchild = newnode;//membuar rchild dari parent sebagai node baru
         }
     }
+
+    void search(string element, node*& parent, node*& currentnode)
+    {
+        //fungsi yang digunakan untuk mencari current node dari node yang di tentukan 
+        currentnode = root;
+        parent = null;
+        while
+    }
 }
