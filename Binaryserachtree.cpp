@@ -24,20 +24,20 @@ class binarytree
     node* root;
     binarytree()
     {
-        root = nullptr; //inisialisasi root sebagai titik null
+        root = nullptr; //inisialisasi root sebagai titik NULL
     }
     void insert(string element) //memasukan sebuah node ke dalam binary tree
     {
         node* newnode = new node(element, nullptr, nullptr); //mengalokasikan node baru 
         newnode->info = element; //memsukan data baru pada node baru 
-        newnode->lchild = nullptr; //membuat lchild sebagai titk null
-        newnode->rchild = nullptr; //membuat rchild sebagai titik null
+        newnode->lchild = nullptr; //membuat lchild sebagai titk NULL
+        newnode->rchild = nullptr; //membuat rchild sebagai titik NULL
 
         node* parent = nullptr;
         node* currentnode = nullptr;
         search(element, parent, currentnode); //alokasikan node yang akan menjadi parent parent
 
-        if (parent == nullptr)//jika parent is null(tree kosong)
+        if (parent == nullptr)//jika parent is NULL(tree kosong)
 
         {
             root = newnode; //menandai newnode sebagai root
@@ -59,8 +59,8 @@ class binarytree
     {
         //fungsi yang digunakan untuk mencari current node dari node yang di tentukan 
         currentnode = root;
-        parent = null;
-        while((currentnode != null)&&(currentnode->info!=element))
+        parent = NULL;
+        while((currentnode != NULL)&&(currentnode->info!=element))
         {
             parent = currentnode;
             if (element < currentnode->info)
@@ -72,6 +72,10 @@ class binarytree
     }
     void inorder(node* ptr)
     {
-        
+        if ( root == NULL )
+        {
+            cout << "tree is empty" << endl;
+            return
+        }
     }
 }
