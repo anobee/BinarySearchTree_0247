@@ -80,7 +80,7 @@ class binarytree
         if (ptr != NULL)
         {
             inorder(ptr->lchild);
-            cout << ptr->info;
+            cout << ptr->info << "";
             inorder(ptr->rchild);
         }
     }
@@ -94,8 +94,8 @@ class binarytree
         }
         if (ptr != NULL)
         {
+            cout << ptr->info << "";
             preorder(ptr->lchild);
-            cout << ptr->info;
             preorder(ptr->rchild);
         }
     }
@@ -109,8 +109,8 @@ class binarytree
         }
         if (ptr != NULL)
         {
+            cout << ptr->info << "";
             postorder(ptr->lchild);
-            cout << ptr->info;
             postorder(ptr->rchild);
         }
     }
