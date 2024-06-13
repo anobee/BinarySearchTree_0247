@@ -109,9 +109,9 @@ class binarytree
         }
         if (ptr != NULL)
         {
-            cout << ptr->info << "";
             postorder(ptr->lchild);
             postorder(ptr->rchild);
+            cout << ptr->info << "";
         }
     }
 }
