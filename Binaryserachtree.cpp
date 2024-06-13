@@ -20,5 +20,8 @@ class node
 
 class binarytree
 {
-    
-}
+    public:
+    node* root;
+    binary tree()
+    {
+        root = nullptr; //inisialisasi root sebagai titik null
